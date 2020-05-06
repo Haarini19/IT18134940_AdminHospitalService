@@ -16,7 +16,14 @@ public class Hospital {
 
 			// Provide the correct details: DBServer/DBName, username, password
 			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/AdminHospital", "root", "");
-		} catch (Exception e) {
+			
+			//For testing
+			System.out.print("Successfully connected");
+			
+			
+		} 
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
 		return con;
